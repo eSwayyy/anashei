@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="resources/boton.png">
+    <title>Document</title>
+</head>
+<body>
+    <form action="formulario.php" method="get">
+        <fieldset>
+            <legend>Datitos</legend>
+            <label for="name">Nombre:</label><br>
+            <input type="text" id="name" name="name" required ><br><br>
+
+            <label for="correo">Email:</label><br>
+            <input type="email" id="correo" name="email" placeholder="AAAAAAA@gmail.com"><br><br>
+
+            <label for="pass">Contraseña:</label><br>
+            <input type="password" id="pass" name="pass" autofocus><br><br>
+
+            <label for="birthday">Cumpleaños</label><br>
+            <input type="date" id="birthday" name="birthday"><br><br>
+            
+            <label for="cv">Ingresar</label><br>
+            <input type="file" id="CV" name="cv"><br><br>
+            
+            <textarea name="Description" id="Description" cols="30" rows="10"></textarea>
+        </fieldset>
+        <br>
+        <fieldset>
+            <input type="radio" id="red" name="color" value="red">
+            <label for="red">Rojo</label>
+
+            <input type="radio" id="blue" name="color" value="blue">
+            <label for="blue">Azul</label>
+
+            <input type="radio" id="green" name="color" value="green">
+            <label for="green">Verde</label><br><br>
+            
+            <input type="color" name="color"><br>
+
+            <select name="color2" id="color2">
+                <option value="blue">Azul</option>
+                <option value="red">Rojo</option>
+                <option value="greeb">Verde</option>
+            </select>
+        </fieldset><br>
+        <fieldset>
+            <legend>Hobbies</legend>
+
+            <input type="checkbox" id="read" name="hobbie1" value="read">
+            <label for="read">Leer</label>
+
+            <input type="checkbox" id="dance" name="hobbie2" value="dance">
+            <label for="dance">Bailar</label>
+            
+            <input type="checkbox" id="code" name="hobbie3" value="code">
+            <label for="code">Programar</label>
+            
+        </fieldset>
+        <br>
+        <input type="submit" value="listo">
+        <input type="reset" value="borrar">
+    </form>
+</body>
+</html>
